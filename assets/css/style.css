@@ -18,16 +18,21 @@ body {
     align-items: center;
 }
 
-header {
-    padding-top: 100px;
+@keyframes wheelHueColor {
+    from, to { color: rgb(236,100,75); }
+    10%      { color: rgb(219,10,91); }
+    20%      { color: rgb(174,168,211); }
+    30%      { color: rgb(89,171,227); }
+    40%      { color: rgb(37,116,169); }
+    50%      { color: rgb(3,201,169); }
+    60%      { color: rgb(22,160,133); }
+    70%      { color: rgb(233,212,96); }
+    80%      { color: rgb(243,156,18); }
+    90%      { color: rgb(236,240,241); }
 }
 
-header h1 {
-    font-size: 8vw;
-    color: var(--magic-mint);
-    text-shadow: 0 0 30px rgb(42, 184, 181, 1);
-    background: rgba(18, 64, 50, 0.8);
-    padding: 15px;
+header {
+    padding-top: 100px;
 }
 
 .question {
