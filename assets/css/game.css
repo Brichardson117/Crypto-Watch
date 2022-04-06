@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+}
+
+:root {
+    --textColor: #124032;
+    --bgColor: #97F0CE;
+    --col1: #49D68D;
+    --col2: #2AB8B5;
+    --col3: #6CBFA1;
+
+  }
+
+.logo {
+      font-family: 'Righteous', cursive;
+      font-size: 50px;
+      color: #FFFFFF;
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+
+  #logoRow h4{
+      font-size: 24px;
+      color: var(--textColor);
+      line-height: 1.2;
+      
+  }
+
+.pageTop {
+    background-color: var(--bgColor);
+}
