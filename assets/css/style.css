@@ -19,6 +19,7 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 header {
     padding-top: 100px;
 }
@@ -30,6 +31,8 @@ header h1 {
     background: rgba(18, 64, 50, 0.8);
     padding: 15px;
 =======
+=======
+>>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 @keyframes wheelHueColor {
     from, to { color: rgb(236,100,75); }
     10%      { color: rgb(219,10,91); }
@@ -45,6 +48,9 @@ header h1 {
 
 header {
     padding-top: 100px;
+<<<<<<< HEAD
+>>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
+=======
 >>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 }
 
