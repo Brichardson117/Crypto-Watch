@@ -1,5 +1,5 @@
 //Brittney start
-var startMoney = "$10,000";
+const startMoney = "$10,000";
 var money = " ";
 var buyBtn = document.getElementById("trade");
 var sellBtn = document.getElementById("sell")
@@ -34,4 +34,5 @@ var getCryptos = function() {
         }
     })
 }
+// event.preventDefault()
 // Brittney end
