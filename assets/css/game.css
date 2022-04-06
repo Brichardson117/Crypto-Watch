@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
     background-color: var(--bgColor);
+<<<<<<< HEAD
+=======
+    color: var(--textColor);
+    font-size: 20px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.3em;
+>>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 }
 
 :root {
@@ -10,17 +21,44 @@
     --col1: #49D68D;
     --col2: #2AB8B5;
     --col3: #6CBFA1;
+<<<<<<< HEAD
 
   }
+=======
+}
+
+@keyframes wheelHueColor {
+    from, to { color: rgb(255, 38, 0); }
+    10%      { color: rgb(255, 0, 230); }
+    20%      { color: rgb(43, 0, 255); }
+    30%      { color: rgb(0, 255, 251); }
+    40%      { color: rgb(0, 255, 17); }
+    50%      { color: rgb(255, 247, 0); }
+    60%      { color: rgb(22,160,133); }
+    70%      { color: rgb(233,212,96); }
+    80%      { color: rgb(243,156,18); }
+    90%      { color: rgb(255, 153, 212); }
+}
+>>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 
 .logo {
       font-family: 'Righteous', cursive;
       font-size: 50px;
       color: #FFFFFF;
       text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+<<<<<<< HEAD
   }
 
   #logoRow h4{
+=======
+      animation: wheelHueColor 10s infinite;
+      transform: translateY(-50%);
+      padding-top: 50px;
+      padding-left: 30px;
+  }
+
+#logoRow h4{
+>>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
       font-size: 24px;
       color: var(--textColor);
       line-height: 1.2;
@@ -29,4 +67,33 @@
 
 .pageTop {
     background-color: var(--bgColor);
+<<<<<<< HEAD
+=======
+}
+
+.layoutTable {
+    align-items: stretch;
+}
+
+.buyBtn, .sellBtn, .tradeBtn {
+    /* width: 50px; */
+    background-color: var(--col2);
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    color: var(--textColor);
+}
+
+.payment {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    /* float: left; */
+    /* align-items: flex-start; */
+    margin-top: 10px;
+}
+
+.cryptLabel {
+    font-size: 20px;
+>>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 }
