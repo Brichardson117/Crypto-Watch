@@ -4,22 +4,23 @@
     --tiffany-blue: #2ab8b5;
     --ocean-green: #6dbfa1;
     --msu-green: #124032;
-
 }
 
-body {
+body, html {
     font-family: 'Righteous', cursive;
     background-color: var(--msu-green);
-    background-image: url(../images/background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    text-align: center;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+.bg {
+    background-image: url(../images/background.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 header {
     padding-top: 100px;
 }
@@ -30,28 +31,12 @@ header h1 {
     text-shadow: 0 0 30px rgb(42, 184, 181, 1);
     background: rgba(18, 64, 50, 0.8);
     padding: 15px;
-=======
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
-@keyframes wheelHueColor {
-    from, to { color: rgb(236,100,75); }
-    10%      { color: rgb(219,10,91); }
-    20%      { color: rgb(174,168,211); }
-    30%      { color: rgb(89,171,227); }
-    40%      { color: rgb(37,116,169); }
-    50%      { color: rgb(3,201,169); }
-    60%      { color: rgb(22,160,133); }
-    70%      { color: rgb(233,212,96); }
-    80%      { color: rgb(243,156,18); }
-    90%      { color: rgb(236,240,241); }
+    margin: 15px 40px 15px 40px;
 }
 
-header {
-    padding-top: 100px;
-<<<<<<< HEAD
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
+.prompt {
+    padding: 20px;
+    margin: 20px;
 }
 
 .question {
@@ -67,8 +52,13 @@ header {
     background-color: rgba(151, 240, 206, 0.8);
 }
 
-#startBtn {
-    margin: 40px;
+.form-input {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+
+#btn {
     background: rgba(18, 64, 50, 1);
     border-radius: 12px;
+    font-family: 'Righteous', cursive;
 }
