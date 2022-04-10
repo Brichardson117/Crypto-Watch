@@ -2,23 +2,15 @@
     margin: 0;
     padding: 0;
     background-color: var(--bgColor);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
     color: var(--textColor);
     font-size: 20px;
+    /* border: 1px solid black; */
 }
 
 input[type=radio] {
     border: 0px;
     width: 100%;
     height: 1.3em;
-<<<<<<< HEAD
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 }
 
 :root {
@@ -27,13 +19,6 @@ input[type=radio] {
     --col1: #49D68D;
     --col2: #2AB8B5;
     --col3: #6CBFA1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-  }
-=======
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 }
 
 @keyframes wheelHueColor {
@@ -48,35 +33,24 @@ input[type=radio] {
     80%      { color: rgb(243,156,18); }
     90%      { color: rgb(255, 153, 212); }
 }
-<<<<<<< HEAD
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 
 .logo {
       font-family: 'Righteous', cursive;
       font-size: 50px;
       color: #FFFFFF;
       text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  }
-
-  #logoRow h4{
-=======
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
       animation: wheelHueColor 10s infinite;
       transform: translateY(-50%);
       padding-top: 50px;
       padding-left: 30px;
   }
 
+.radio {
+    margin: 0 auto !important;
+    padding: 0;
+  }
+
 #logoRow h4{
-<<<<<<< HEAD
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
       font-size: 24px;
       color: var(--textColor);
       line-height: 1.2;
@@ -85,11 +59,6 @@ input[type=radio] {
 
 .pageTop {
     background-color: var(--bgColor);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 }
 
 .layoutTable {
@@ -116,8 +85,4 @@ input[type=radio] {
 
 .cryptLabel {
     font-size: 20px;
-<<<<<<< HEAD
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
-=======
->>>>>>> 2df7014fa1fe9452dc06812f2030e6966ace661e
 }
