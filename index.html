@@ -7,22 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Fantasy Crypto</title>
 </head>
 <body>
-    <header class="container col-12 text-center">
+    <header class="bg">
         <h1>Fantasy Crypto</h1>
-        <div class="question">Start with $10,000 virtual cash.</div>
-        <div class="question">Buy, sell, and trade crpyto based on real market values without risking real money.</div>
-        <div class="question">Do you have what it takes to become the next crypto-millionaire?</div>
-        <form class="question">
-            <label for="username">Enter your name to play:</label>
-            <input type="text" placeholder="username" name="username" id="username" class="form-input" />
-        </form>
-        <button class="question col-3" id="startBtn" type="submit">Start</button>
+        <div class="prompt">
+            <div class="question">Start with $10,000 virtual cash.</div>
+            <div class="question">Buy, sell, and trade crypto based on real market values without risking real money.</div>
+            <div class="question">Do you have what it takes to become the next crypto-millionaire?</div>
+            <form class="question">
+                <label for="username">Enter your name to play:</label>
+                <input type="text" placeholder="username" name="username" id="username" class="form-input" />
+            </form>
+        </div>
+        <a href="./game.html">
+            <button class="question px-6" id="btn" type="submit">Start</button>
+        </a>
     </header>
-    <script src="./script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

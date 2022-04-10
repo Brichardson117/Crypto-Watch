@@ -2,7 +2,7 @@
 const startMoney = "$10,000";
 var money = " ";
 var buyBtn = document.getElementById("trade");
-var sellBtn = document.getElementById("sell")
+var sellBtn = document.getElementById("sell");
 
 var endGame = function() {
 if (money <= startMoney) {
@@ -34,5 +34,35 @@ var getCryptos = function() {
         }
     })
 }
+
+const baseUrl = 'https:api.coincap.io';
+      const endpoint = '/v2/assets';
+      const url = baseUrl + endpoint;
+      function apiCall() {
+        fetch(url)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data);
+            for (i = 0; i < 20; i++) {
+                var cname = data.data[i].name;
+                console.log(cname);
+
+                var list = document.getElementById('crypList');
+                var el = document.createElement('div');
+                el.classList.add('clist', 'dropdown-item');
+                el.textContent = cname;
+                list.appendChild(el);   
+            }
+
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.addEventListener('click', function(event) {
+            event.stopPropagation();
+            dropdown.classList.toggle('is-active');
+            });
+          });
+      }
+      apiCall();
 // event.preventDefault()
 // Brittney end
