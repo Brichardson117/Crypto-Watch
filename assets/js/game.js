@@ -24,6 +24,8 @@ const baseUrl = "";
 }
 addBtn.addEventListener("click", addWatchlist)
 var addWatchlist = function() {
+    var addedCrypto = document.createElement("li")
+    addedCrypto.classList = " "
     
 }
 
