@@ -4,7 +4,7 @@
     background-color: var(--bgColor);
     color: var(--textColor);
     font-size: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 input[type=radio] {
@@ -91,6 +91,6 @@ ul {
     color: var(--textColor);
 }
 
-#dataView {
-    border-left: 1px solid black;
+#dataPanel {
+    border-left: 6px double seagreen;
 }
