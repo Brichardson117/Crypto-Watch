@@ -19,6 +19,7 @@ input[type=radio] {
     --col1: #49D68D;
     --col2: #2AB8B5;
     --col3: #6CBFA1;
+    background-color: var(--bgColor);
 }
 
 @keyframes wheelHueColor {
