@@ -4,7 +4,7 @@
     background-color: var(--bgColor);
     color: var(--textColor);
     font-size: 20px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 input[type=radio] {
@@ -41,7 +41,7 @@ input[type=radio] {
       text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
       animation: wheelHueColor 10s infinite;
       transform: translateY(-50%);
-      padding-top: 50px;
+      margin-top: 50px;
       padding-left: 30px;
   }
 
@@ -89,4 +89,8 @@ input[type=radio] {
 
 ul {
     color: var(--textColor);
+}
+
+#dataView {
+    border-left: 1px solid black;
 }
