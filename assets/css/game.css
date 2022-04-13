@@ -95,3 +95,23 @@ ul {
 #dataPanel {
     border-left: 6px double seagreen;
 }
+
+/* portfolio styling */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: var(--col2);
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Reddit updates */

@@ -66,3 +66,44 @@ const baseUrl = 'https:api.coincap.io';
       apiCall();
 // event.preventDefault()
 // Brittney end
+
+//reddit api -Jessica
+const baseUrl2 = 'https://www.reddit.com/r/CryptoCurrency/top.json?limit=10';
+      function apiCall2() {
+        fetch(baseUrl2)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data);
+
+            for (i=0; i < 10; i++) {
+                var redditSection = document.querySelector('.reddit');
+                var redditPost = document.createElement('div');
+                redditPost.classList.add('redditPost');
+                redditSection.appendChild(redditPost);
+
+                var rAuthor = document.createElement('h3');
+                rAuthor.textContent = data.data.children[i].data.author;
+                redditPost.appendChild(rAuthor);
+
+                var rTitle = document.createElement('div');
+                rTitle.textContent = data.data.children[i].data.title;
+                redditPost.appendChild(rTitle);            
+
+                var rMessage = document.createElement('div');
+                rMessage.textContent = data.data.children[i].data.selftext;
+                //redditPost.appendChild(rMessage);
+
+                var rLink = document.createElement('a');
+                rLink.type = 'a';
+                rLink.innerHTML = 'click to read more';
+                rLink.href = data.data.children[i].data.url;
+                rLink.target = '_blank';
+                rLink.rel = 'noopener noreferrer';
+                redditPost.appendChild(rLink);
+            }
+          });
+      };
+
+      apiCall2();
