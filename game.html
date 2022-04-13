@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
         <link rel="stylesheet" href="./assets/css/game.css" />
         <title>Fantasy Crypto</title>
       </head>
@@ -45,12 +46,21 @@
                     
               </div>
               <div class="row col-4">
-                <textarea class="col-12" type="text" id="payAmount" name="payVal" rows="1"></textarea>
+                <div class="col-12 text-left mb-5 dropdown" rows="1">
+                  <div class="dropdown-trigger">
+                    <button class="cryptLabel button"  aria-haspopup="true" aria-controls="dropdown-menu3" for="cryp">
+                      <span>Available Crypto</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content cryptLabel" id="crypList" name="cryp" rows="10"></div>
+                  </div>
+                </div>
               </div>
-
-              <div class="row col-4 text-left mb-5">
-                <label class="cryptLabel" for="cryp">Available Crypto</label>
-                <textarea class="col-12 cryptLabel" type="text" id="crypList" name="cryp" rows="10"></textarea>
+              <div class="row col-4">
                 Note: There is a 1% fee on all transactions.
               </div>
 
@@ -68,7 +78,8 @@
             </ul>
             
             <div class="result col-12"></div>
-            
+        
+            <script src="./assets/js/game.js"></script>
         </main>
 
 
