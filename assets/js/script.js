@@ -5,14 +5,15 @@ var startBtnEl = document.getElementById("btn")
 
 var startGame  = function() {
 getPlayerName();
-localStorage.setItem("Player money", money);
-localStorage.setItem("player name", getPlayerName);
+localStorage.setItem("pMoney", money);
+localStorage.setItem("pName", getPlayerName());
  window.location.replace(" ");
 };
 
 var getPlayerName = function () {
-    var name = " ";
-    console.log("player " + name);
+    var name = document.getElementById("username").value;
+    // var name = " ";
+    // console.log("player " + name);
     return name;
 };
 startBtnEl.addEventListener("click", startGame);
