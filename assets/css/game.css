@@ -88,3 +88,25 @@ input[type=radio] {
 ul {
     color: var(--textColor);
 }
+
+#bigBox {
+    display: flex;
+    flex-direction:  row;
+}
+
+#leftside {
+    width: 50%;
+}
+
+#rightside {
+    width: 50%;
+}
+
+.cryptoContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.cryptoContainer p {
+    width: 30%;
+}

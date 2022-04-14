@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
-        <link rel="stylesheet" href="./assets/css/game.css" />
-        <title>Fantasy Crypto</title>
-      </head>
 
-      <body>
-        <main class="pageTop container-fluid well well-lg">
-            <div id="logoRow" class="col-12 d-flex row justify-content-between w-100 p-1">
-                <h1 class = "col-lg-6 text-left logo title">Fantasy Crypto</h1>
-                <div class="scoreBoard col row w-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="./assets/css/game.css" />
+    <title>Fantasy Crypto</title>
+</head>
+
+<body>
+    <main class="pageTop container-fluid well well-lg">
+        <div id="logoRow" class="col-12 d-flex row justify-content-between w-100 p-1">
+            <h1 class="col-lg-6 text-left logo title">Fantasy Crypto</h1>
+            <div class="scoreBoard col row w-100">
                 <h4 class="col-lg-8 text-right total-value">Total Value:</h4><br />
                 <h4 class="col-lg-4 text-right worth">$10,000.00</h4>
                 <h4 class="col-lg-8 text-right total-cash">Total Cash</h4><br />
-                  <h4 class="col-lg-4 text-right cash">$10,000.00</h4>
-                </div>                
+                <h4 class="col-lg-4 text-right cash">$10,000.00</h4>
             </div>
-            
-            <div class="tradeSection mb-5 text-light row text-center d-flex flex-column mx-auto p-5">
-              <div class="col-4 row justify-content-around">
-                <input class="col buyBtn p-3 m-1" type="button" value="Buy">
-                <input class="col sellBtn p-3 m-1" type="button" value="Sell">
-              </div> 
-              <div>
-                <div class="col-4 row">
-                  <!-- <div class="form-group col">-->
-                    <div class="payment col justify-content-start"> 
-                      <input class="col-1" type="radio" name="payType" value="usd">Use USD</input>
-                      </div>
-                      <div class="payment col justify-content-start">
-                      <input class="col-1" type="radio" name="payType" value="crypto">Use Crypto</input>
-                      <BR><BR>
+        </div>
+
+        <!-- <div class="tradeSection mb-5 text-light row text-center d-flex flex-column mx-auto p-5"> -->
+        <div id="bigBox">
+            <div id="leftside" class="p-5">
+                <div>
+                    <div class="col-12 row justify-content-around">
+                        <input class="col buyBtn p-3 m-1" type="button" value="Buy">
+                        <input class="col sellBtn p-3 m-1" type="button" value="Sell">
                     </div>
-                    
-              </div>
-              <div class="row col-4">
-                <div class="col-12 text-left mb-5 dropdown" rows="1">
-                  <div class="dropdown-trigger">
-                    <button class="cryptLabel button"  aria-haspopup="true" aria-controls="dropdown-menu3" for="cryp">
-                      <span>Available Crypto</span>
-                      <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                    <div class="dropdown-content cryptLabel" id="crypList" name="cryp" rows="10"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row col-4">
-                Note: There is a 1% fee on all transactions.
-              </div>
+                    <div>
+                        <div class="col-12 row">
+                            <!-- <div class="form-group col">-->
+                            <div class="payment col justify-content-start">
+                                <input class="col-1" type="radio" name="payType" value="usd">Use USD</input>
+                            </div>
+                            <div class="payment col justify-content-start">
+                                <input class="col-1" type="radio" name="payType" value="crypto">Use Crypto</input>
+                                <BR><BR>
+                            </div>
 
-              <div class="col-4 pb-5">
-                <input class="col tradeBtn px-5 py-3 m-1" type="button" value="Trade">
-              </div>
-              <div class="col-4 mt-auto pt-5">
-                <a href="#">Quit game - Start Over</a>
+                        </div>
+                        <div class="row col-12">
+                            <div class="col-12 text-left mb-5 dropdown" rows="1">
+                                <div class="dropdown-trigger">
+                                    <button class="cryptLabel button" aria-haspopup="true"
+                                        aria-controls="dropdown-menu3" for="cryp">
+                                        <span>Available Crypto</span>
+                                        <span class="icon is-small">
+                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                                    <div class="dropdown-content cryptLabel" id="crypList" name="cryp" rows="10"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div>
+                    <div class="row col-12">
+                        Note: There is a 1% fee on all transactions.
+                    </div>
 
+                    <div class="col-12 pb-5">
+                        <input class="col tradeBtn px-5 py-3 m-1" type="button" value="Trade">
+                    </div>
+                    <div class="col-12 mt-auto pt-5">
+                        <a href="#">Quit game - Start Over</a>
+                    </div>
+                </div>
             </div>
-            <!-- <ul class="choiceList col-lg-12 "></ul> -->
-            <ul class="form-check choiceList col-12 justify-content-center w-50 mx-auto">
-                
-            </ul>
-            
-            <div class="result col-12"></div>
-        
-            <script src="./assets/js/game.js"></script>
-        </main>
+            <div id="rightside">
+                <div id="watchList"></div>
+            </div>
+        </div>
 
 
-<script src="./assets/js/game.js"></script>
-      </body>
+
+        <!-- <ul class="choiceList col-lg-12 "></ul> -->
+        <ul class="form-check choiceList col-12 justify-content-center w-50 mx-auto">
+
+        </ul>
+
+        <div class="result col-12"></div>
+
+
+
+        <script src="./assets/js/game.js"></script>
+    </main>
+
+
+    <script src="./assets/js/game.js"></script>
+</body>
