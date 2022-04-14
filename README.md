@@ -13,4 +13,4 @@ checkout the website from the link bellow!
 https://brichardson117.github.io/Crypto-Watch/ 
 
 Thank you!
-Creators Dough, Ashley, and Brittney ❤️
+Creators Dough, Jessica, and Brittney ❤️
