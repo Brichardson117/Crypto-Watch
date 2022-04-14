@@ -37,21 +37,22 @@ function addToWatchList (event) {
     cryptoContainer.classList.add("cryptoContainer");
 
     // append the cryptoname
-    var CryptoName = document.createElement("p");
+    var CryptoName = document.createElement("td");
     CryptoName.textContent = event.target.textContent;
     
-    var cryptoPrice = document.createElement("p");
-    cryptoPrice.textContent = Number(event.target.getAttribute("data-price")).toFixed(2);
+    var cryptoPrice = document.createElement("td");
+    cryptoPrice.textContent ="$" + Number(event.target.getAttribute("data-price")).toFixed(2);
 
-    var marketCap = document.createElement("p");
-    marketCap.textContent = Number(event.target.getAttribute("market-cap")).toFixed(2);
+    var marketCap = document.createElement("td");
+    marketCap.textContent = "$" + Number(event.target.getAttribute("market-cap")).toFixed(2);
     
-    cryptoContainer.append(CryptoName, cryptoPrice, marketCap);
+    cryptoContainer.append(CryptoName, marketCap ,cryptoPrice);
     watchListDiv.append(cryptoContainer)
 
-    localStorage.setItem(addToWatchList);
+   
 }
-
+localStorage.setItem("watch list", addToWatchList);
+ 
 
 const baseUrl = 'https:api.coincap.io';
       const endpoint = '/v2/assets';
