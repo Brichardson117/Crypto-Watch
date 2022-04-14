@@ -1,12 +1,10 @@
 
 // Brittney start
-var money = "$10,000";
 var startBtnEl = document.getElementById("btn")
 
 var startGame  = function() {
 getPlayerName();
-localStorage.setItem("pMoney", money);
-localStorage.setItem("pName", getPlayerName());
+localStorage.setItem("player name", getPlayerName);
  window.location.replace(" ");
 };
 

@@ -1,10 +1,4 @@
-//Brittney start
-const startMoney = "$10,000";
-var money = " ";
-var buyBtn = document.getElementById("trade");
-var sellBtn = document.getElementById("sell");
 // Doug Start
-var playerMoney = localStorage.getItem('pMoney')
 function onLoad() {
     var playerName = localStorage.getItem('pName');
     var play = document.getElementById("player")
@@ -13,7 +7,6 @@ function onLoad() {
 } 
 else 
 {
-
     console.log("playerName>>> " + playerName)
     console.log("Play>>> " + play)
     play.textContent = playerName + "'s Crypto Watch"
@@ -23,9 +16,6 @@ onLoad()
 // Doug End
 
 var addBtn = document.getElementById("#add");
-
-
-
 
 var buildWatchList = function() {
   var CryptoName = document.createElement("p");
@@ -58,6 +48,8 @@ function addToWatchList (event) {
     
     cryptoContainer.append(CryptoName, cryptoPrice, marketCap);
     watchListDiv.append(cryptoContainer)
+
+    localStorage.setItem(addToWatchList);
 }
 
 
@@ -107,8 +99,6 @@ const baseUrl2 = 'https://www.reddit.com/r/CryptoCurrency/top.json?limit=10';
             return response.json();
           })
           .then(function (data) {
-            console.log(data);
-
             for (i=0; i < 10; i++) {
                var redditSection = document.querySelector('.redditSection');
 
@@ -120,44 +110,35 @@ const baseUrl2 = 'https://www.reddit.com/r/CryptoCurrency/top.json?limit=10';
                var rIcon = document.createElement('figure');
                rIcon.classList.add('.media-left');
                redditPost.appendChild(rIcon);
-
                var rIconContent = document.createElement('p');
                rIconContent.classList.add('image', 'is-96x96');
                rIcon.appendChild(rIconContent);
-
                var rIconImage = document.createElement('img');
                rIconImage.src = 'https://i.redd.it/rrz3hmsxcll71.png';
                rIconContent.appendChild(rIconImage);
 
                //content
-
                var rMediaContent = document.createElement('div');
                rMediaContent.classList.add('.media-content');
                redditPost.appendChild(rMediaContent);
-
                var rContent = document.createElement('div');
                rContent.classList.add('.content');
                rMediaContent.appendChild(rContent);
-
                var rInfo = document.createElement('p');
                rInfo.classList.add('redditInfo');
                rContent.appendChild(rInfo);
-
                var rAuthor = document.createElement('strong');
                rAuthor.textContent = data.data.children[i].data.author + '  ';
                rAuthor.classList.add('rAuthor'); 
                rInfo.appendChild(rAuthor);
-
                var rUsername = document.createElement('small');
                rUsername.textContent = data.data.children[i].data.author_fullname;
                rUsername.classList.add('rUsername');
                rInfo.appendChild(rUsername);
-
                var rTitle = document.createElement('p');
                rTitle.textContent = data.data.children[i].data.title;
                rTitle.classList.add('rTitle');
                rInfo.appendChild(rTitle);
-
                var rLink = document.createElement('a');
                rLink.type = 'a';
                rLink.innerHTML = 'click to read more';
