@@ -104,10 +104,13 @@ ul {
 }
 
 .redditHeading {
-    background-color: var(--col2);
     padding: 10px;
     font-family: 'Righteous', cursive;
     color: var(--textColor);
+    background-image: url(../images/reddit-background.jpeg);
+    height: 300px;
+    background-size: cover;
+    font-size: 3vw;
 }
 
 .redditSection {
