@@ -1,21 +1,15 @@
 //Brittney start
-<<<<<<< HEAD
-=======
 const startMoney = "$10,000";
 var money = " ";
 var buyBtn = document.getElementById("trade");
 var sellBtn = document.getElementById("sell");
 // Doug Start
-// var playerName = localStorage.getItem('pName');
-var playerMoney = localStorage.getItem('pMoney');
-
-
+var playerMoney = localStorage.getItem('pMoney')
 function onLoad() {
     var playerName = localStorage.getItem('pName');
     var play = document.getElementById("player")
     if (!playerName) {
     play.textContent = "Crypto Watch"
-    
 } 
 else 
 {
@@ -27,7 +21,6 @@ else
 }
 onLoad()
 // Doug End
->>>>>>> doug
 
 var addBtn = document.getElementById("#add");
 
@@ -44,19 +37,7 @@ var buildWatchList = function() {
 
 };
 
-// var getCryptos = function() {
-//     var cryptoApi = " "
-//     fetch(cryptoApi)
-//     .then(function(response){
-//         if(response.ok) {
-//             response.json().then(function(data){
-//                 displayCryptos()
-//             })
-//         } else {
-//             alert("Unable to get Cryptos at this time")
-//         }
-//     })
-// }
+
 
 const baseUrl = 'https:api.coincap.io';
       const endpoint = '/v2/assets';
@@ -74,7 +55,7 @@ const baseUrl = 'https:api.coincap.io';
 
                 var list = document.getElementById('crypList');
                 var el = document.createElement('div');
-                el.classList.add('clist', 'dropdown-item');
+                el.classList.add('clist','dropdown-item','has-background-white');
                 el.textContent = cname;
                 list.appendChild(el);   
             }
@@ -164,7 +145,5 @@ const baseUrl2 = 'https://www.reddit.com/r/CryptoCurrency/top.json?limit=10';
       apiCall2();
 
       //Jessica end
-
-// Doug Start
 
 

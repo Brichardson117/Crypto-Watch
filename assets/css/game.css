@@ -84,9 +84,10 @@ input[type=radio] {
     margin-top: 10px;
 }
 
-.cryptLabel {
-    font-size: 20px;
-}
+/* .cryptLabel { */
+    /* font-size: 20px;
+    background-color: white; */
+/* } */
 
 ul {
     color: var(--textColor);
