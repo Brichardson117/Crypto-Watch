@@ -4,7 +4,7 @@
     background-color: var(--bgColor);
     color: var(--textColor);
     font-size: 20px;
-    border: 3px solid black;
+    /* border: 1px solid black; */
 }
 
 input[type=radio] {
@@ -19,6 +19,7 @@ input[type=radio] {
     --col1: #49D68D;
     --col2: #2AB8B5;
     --col3: #6CBFA1;
+    background-color: var(--bgColor);
 }
 
 @keyframes wheelHueColor {
@@ -39,13 +40,15 @@ input[type=radio] {
       font-size: 50px;
       color: #FFFFFF;
       text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-  }
-
-  #logoRow h4{
       animation: wheelHueColor 10s infinite;
       transform: translateY(-50%);
-      padding-top: 50px;
+      margin-top: 50px;
       padding-left: 30px;
+  }
+
+.radio {
+    margin: 0 auto !important;
+    padding: 0;
   }
 
 #logoRow h4{
@@ -89,24 +92,55 @@ ul {
     color: var(--textColor);
 }
 
-#bigBox {
-    display: flex;
-    flex-direction:  row;
+#dataPanel {
+    border-left: 6px double seagreen;
 }
 
-#leftside {
-    width: 50%;
+/* Reddit updates */
+
+.redditContainer {
+    background-color: var(--col2);
 }
 
-#rightside {
-    width: 50%;
+.redditHeading {
+    background-color: var(--col2);
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    color: var(--textColor);
 }
 
-.cryptoContainer {
-    display: flex;
-    flex-direction: row;
+.redditSection {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
 }
 
-.cryptoContainer p {
-    width: 30%;
+.media {
+    background-color: white;
+}
+
+img {
+    background-color: white;
+}
+
+.redditInfo {
+    background-color: white;
+}
+
+.rAuthor {
+    background-color: white;
+    color: var(--textColor);
+    font-size: 25px;
+}
+
+.rUsername {
+    background-color: white;
+}
+
+.rTitle {
+    background-color: white;
+}
+
+.rLink {
+    background-color: white;
 }
