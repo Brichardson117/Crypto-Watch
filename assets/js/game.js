@@ -78,32 +78,66 @@ const baseUrl2 = 'https://www.reddit.com/r/CryptoCurrency/top.json?limit=10';
             console.log(data);
 
             for (i=0; i < 10; i++) {
-                var redditSection = document.querySelector('.reddit');
-                var redditPost = document.createElement('div');
-                redditPost.classList.add('redditPost');
-                redditSection.appendChild(redditPost);
+               var redditSection = document.querySelector('.redditSection');
 
-                var rAuthor = document.createElement('h3');
-                rAuthor.textContent = data.data.children[i].data.author;
-                redditPost.appendChild(rAuthor);
+               var redditPost = document.createElement('article');
+               redditPost.classList.add('media');
+               redditSection.appendChild(redditPost);
 
-                var rTitle = document.createElement('div');
-                rTitle.textContent = data.data.children[i].data.title;
-                redditPost.appendChild(rTitle);            
+               //user icon
+               var rIcon = document.createElement('figure');
+               rIcon.classList.add('.media-left');
+               redditPost.appendChild(rIcon);
 
-                var rMessage = document.createElement('div');
-                rMessage.textContent = data.data.children[i].data.selftext;
-                //redditPost.appendChild(rMessage);
+               var rIconContent = document.createElement('p');
+               rIconContent.classList.add('image', 'is-96x96');
+               rIcon.appendChild(rIconContent);
 
-                var rLink = document.createElement('a');
-                rLink.type = 'a';
-                rLink.innerHTML = 'click to read more';
-                rLink.href = data.data.children[i].data.url;
-                rLink.target = '_blank';
-                rLink.rel = 'noopener noreferrer';
-                redditPost.appendChild(rLink);
+               var rIconImage = document.createElement('img');
+               rIconImage.src = 'https://i.redd.it/rrz3hmsxcll71.png';
+               rIconContent.appendChild(rIconImage);
+
+               //content
+
+               var rMediaContent = document.createElement('div');
+               rMediaContent.classList.add('.media-content');
+               redditPost.appendChild(rMediaContent);
+
+               var rContent = document.createElement('div');
+               rContent.classList.add('.content');
+               rMediaContent.appendChild(rContent);
+
+               var rInfo = document.createElement('p');
+               rInfo.classList.add('redditInfo');
+               rContent.appendChild(rInfo);
+
+               var rAuthor = document.createElement('strong');
+               rAuthor.textContent = data.data.children[i].data.author + '  ';
+               rAuthor.classList.add('rAuthor'); 
+               rInfo.appendChild(rAuthor);
+
+               var rUsername = document.createElement('small');
+               rUsername.textContent = data.data.children[i].data.author_fullname;
+               rUsername.classList.add('rUsername');
+               rInfo.appendChild(rUsername);
+
+               var rTitle = document.createElement('p');
+               rTitle.textContent = data.data.children[i].data.title;
+               rTitle.classList.add('rTitle');
+               rInfo.appendChild(rTitle);
+
+               var rLink = document.createElement('a');
+               rLink.type = 'a';
+               rLink.innerHTML = 'click to read more';
+               rLink.href = data.data.children[i].data.url;
+               rLink.target = '_blank';
+               rLink.rel = 'noopener noreferrer';
+               rLink.classList.add('rLink');
+               rInfo.appendChild(rLink);
             }
           });
       };
 
       apiCall2();
+
+      //Jessica end

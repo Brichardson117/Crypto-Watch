@@ -96,22 +96,51 @@ ul {
     border-left: 6px double seagreen;
 }
 
-/* portfolio styling */
+/* Reddit updates */
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
+.redditContainer {
     background-color: var(--col2);
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
+.redditHeading {
+    background-color: var(--col2);
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    color: var(--textColor);
 }
 
-/* Reddit updates */
+.redditSection {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.media {
+    background-color: white;
+}
+
+img {
+    background-color: white;
+}
+
+.redditInfo {
+    background-color: white;
+}
+
+.rAuthor {
+    background-color: white;
+    color: var(--textColor);
+    font-size: 25px;
+}
+
+.rUsername {
+    background-color: white;
+}
+
+.rTitle {
+    background-color: white;
+}
+
+.rLink {
+    background-color: white;
+}
