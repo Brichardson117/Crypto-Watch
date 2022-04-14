@@ -17,21 +17,14 @@ onLoad()
 
 var addBtn = document.getElementById("#add");
 
-var buildWatchList = function() {
-  var CryptoName = document.createElement("p");
-  CryptoName.textContent = data.data[0].name;
-  var marketCap = document.createElement("p");
-  marketCap.textContent = data.data[0].marketCapUsd;
- var cryptoPrice = documnt.createElement("p");
- cryptoPrice.textContent = data.data[0].priceUsd
-
-};
 
 function addToWatchList (event) {
+  
     console.log(event.target.textContent)
     console.log(Number(event.target.getAttribute("data-price")))
 
     var watchListDiv = document.querySelector("#watchList");
+    
 
     var cryptoContainer = document.createElement("div");
     cryptoContainer.classList.add("cryptoContainer");
@@ -49,9 +42,9 @@ function addToWatchList (event) {
     cryptoContainer.append(CryptoName, marketCap ,cryptoPrice);
     watchListDiv.append(cryptoContainer)
 
-   
+   localStorage.setItem("watch list", CryptoName + cryptoPrice + marketCap);
 }
-localStorage.setItem("watch list", addToWatchList);
+
  
 
 const baseUrl = 'https:api.coincap.io';

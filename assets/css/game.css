@@ -148,11 +148,15 @@ img {
 .rLink {
     background-color: white;
 }
-
+#watchlist{
+    display: inline;
+    background-color: #FFFFFF;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    
   }
   
   td, th {
