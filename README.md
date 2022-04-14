@@ -32,4 +32,4 @@ https://brichardson117.github.io/Crypto-Watch/
 
 
 Thank you!
-Creators Doug, Ashley, and Brittney ❤️
+Creators Doug, Jessica, and Brittney ❤️
