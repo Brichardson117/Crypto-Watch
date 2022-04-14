@@ -26,26 +26,24 @@ var buildWatchList = function() {
 };
 
 function addToWatchList (event) {
-    // console.log(event.target.textContent)
-    // console.log(Number(event.target.getAttribute("data-price")))
-
     var watchListDiv = document.querySelector("#watchList");
+    var createRow = document.createElement('tr');
+    watchListDiv.appendChild(createRow);
 
-    var cryptoContainer = document.createElement("div");
-    cryptoContainer.classList.add("cryptoContainer");
-
-    // append the cryptoname
     var CryptoName = document.createElement("td");
     CryptoName.textContent = event.target.textContent;
+    CryptoName.classList.add('has-background-white');
     
     var cryptoPrice = document.createElement("td");
+    cryptoPrice.classList.add('has-background-white');
     cryptoPrice.textContent ="$" + Number(event.target.getAttribute("data-price")).toFixed(2);
 
     var marketCap = document.createElement("td");
+    marketCap.classList.add('has-background-white');
     marketCap.textContent = "$" + Number(event.target.getAttribute("market-cap")).toFixed(2);
     
-    cryptoContainer.append(CryptoName, marketCap ,cryptoPrice);
-    watchListDiv.append(cryptoContainer)
+    createRow.append(CryptoName, marketCap ,cryptoPrice);
+
 
    
 }

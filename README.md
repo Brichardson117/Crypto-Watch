@@ -10,7 +10,7 @@ An API from CoinCap allows us to mainstream up-to-date information about cryptoc
 From the watch list  you can monitor key infromation in real time. 
 From Bitcoin, to DogeCoin, to Polkadot, you can monitior them all from Crypto Watch.
 
-![watchlist]()
+![watchlist](assets/images/watchlist.png)
 
 Additionally, Reddit's API made it possible to included a section to see what people are talking about on the subreddit r/CryptoCurrency.
 
@@ -22,7 +22,7 @@ Local storage ensures that your watch list is stored for viewing at later times,
 
 ![Image of main page](./assets/images/page1.jpg)
 
-![Image of Watch page](./assets/images/page2.jpg)
+![Image of Watch page](./assets/images/page2.png)
 
 ## Website 
 checkout the website from the link bellow!
