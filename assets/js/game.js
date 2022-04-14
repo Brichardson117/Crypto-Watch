@@ -54,7 +54,7 @@ const baseUrl = 'https:api.coincap.io';
                 // console.log(cname);
 
                 var list = document.getElementById('crypList');
-                var el = document.createElement('div');
+                var el = document.createElement('a');
                 el.classList.add('clist','dropdown-item','has-background-white');
                 el.textContent = cname;
                 list.appendChild(el);   
