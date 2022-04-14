@@ -7,8 +7,6 @@ function onLoad() {
 } 
 else 
 {
-    console.log("playerName>>> " + playerName)
-    console.log("Play>>> " + play)
     play.textContent = playerName + "'s Crypto Watch"
 }
 }
@@ -28,8 +26,8 @@ var buildWatchList = function() {
 };
 
 function addToWatchList (event) {
-    console.log(event.target.textContent)
-    console.log(Number(event.target.getAttribute("data-price")))
+    // console.log(event.target.textContent)
+    // console.log(Number(event.target.getAttribute("data-price")))
 
     var watchListDiv = document.querySelector("#watchList");
 
@@ -67,7 +65,7 @@ const baseUrl = 'https:api.coincap.io';
                 var cname = data.data[i].name;
                 var cprice = data.data[i].priceUsd;
                 var marketCapValue = data.data[i].marketCapUsd;
-                console.log(cname);
+                // console.log(cname);
 
                 var list = document.getElementById('crypList');
                 var el = document.createElement('a');
