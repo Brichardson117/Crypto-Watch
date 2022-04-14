@@ -95,3 +95,9 @@ ul {
 #dataPanel {
     border-left: 6px double seagreen;
 }
+
+#nOne, #nTwo, #nThree, #nFour {
+    background-color: var(--col3);
+    height: 300px;
+    border-radius: 20px;
+}
