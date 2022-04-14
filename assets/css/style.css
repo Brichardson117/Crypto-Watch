@@ -1,0 +1,80 @@
+:root {
+    --magic-mint: #97f0ce;
+    --emerald: #49d68d;
+    --tiffany-blue: #2ab8b5;
+    --ocean-green: #6dbfa1;
+    --msu-green: #124032;
+}
+
+body, html {
+    font-family: 'Righteous', cursive;
+    background-color: var(--msu-green);
+    height: 100%;
+    text-align: center;
+}
+
+.bg {
+    background-image: url(../images/background.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding-top: 100px;
+}
+
+header h1 {
+    font-size: 8vw;
+    color: var(--magic-mint);
+    text-shadow: 0 0 30px rgb(42, 184, 181, 1);
+    background: rgba(18, 64, 50, 0.8);
+    padding: 15px;
+    margin: 15px 40px 15px 40px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    animation: wheelHueColor 10s infinite;
+    transform: translateY(-50%);
+}
+
+.prompt {
+    padding: 20px;
+    margin: 20px;
+}
+
+.question {
+    font-size: 40px;
+    color: var(--magic-mint);
+    text-shadow: 0 0 30px rgb(73, 214, 141, 1);
+    background: rgba(18, 64, 50, 0.8);
+    padding: 5px;
+}
+
+#username {
+    border-radius: 12px;
+    background-color: rgba(151, 240, 206, 0.8);
+}
+
+.form-input {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+
+#btn {
+    background: rgba(18, 64, 50, 1);
+    border-radius: 12px;
+    font-family: 'Righteous', cursive;
+}
+
+@keyframes wheelHueColor {
+    from, to { color: rgb(255, 38, 0); }
+    10%      { color: rgb(255, 0, 230); }
+    20%      { color: rgb(43, 0, 255); }
+    30%      { color: rgb(0, 255, 251); }
+    40%      { color: rgb(0, 255, 17); }
+    50%      { color: rgb(255, 247, 0); }
+    60%      { color: rgb(22,160,133); }
+    70%      { color: rgb(233,212,96); }
+    80%      { color: rgb(243,156,18); }
+    90%      { color: rgb(255, 153, 212); }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="./assets/css/game.css" />
+  <title>Crypto Watch</title>
+</head>
+
+<body>
+  <main>
+    <div id="logoRow" class="columns">
+      <div class="column is-12">
+        <p class="logo title" id="player">Crypto Watch</p>
+      </div>
+    
+       </div>
+    </div>
+  </main>
+
+  <div class="tradeSection columns mx-auto p-5 is-align-self-stretch is-flex-grow-3">
+    <section class="column is-4" name="buySell">
+
+
+        <div class="columns">
+          <div class="column is-fullwidth m-0 mr-3 ml-3 p-0 is-size-4 has-text-weight-bold">Add crypto to Watch List:</div>
+        </div>
+        <div class="text-left mb-5 dropdown columns">
+          <div class="column dropdown-trigger is-fullwidth is-fullwidth-mobile">
+            <button class="button is-fullwidth is-justify-content-left" aria-haspopup="true" aria-controls="dropdown-menu3" for="cryp">
+              <span class="has-background-white is-size-5">Top 20 Cryptocurrencies</span>
+              <span class="icon is-small has-background-white">
+                <i class="fas fa-angle-down has-background-white" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content" id="crypList" name="cryp" rows="10"></div>
+          </div>
+        </div>
+
+        <div class="column is-fullwidth">
+          <h4 class="tips h4">Tips</h4>
+          <div class="tips">1. Have a strategy for crypto trading</div>
+          <div class="tips">2. Manage risk</div>
+          <div class="tips">3. Diversify your crypto portfolio</div>
+          <div class="tips">4. Be in it for the long term</div>
+          <div class="tips">5. Automate purchases</div>
+          <div class="tips">6. Use Trading Bots</div>
+          <h4 class="mistakes h4">Common Mistakes</h4>
+          <div class="mistakes">1. Buying just because the price is low</div>
+          <div class="mistakes">2. Going 'all-in'</div>
+          <div class="mistakes">3. Thinking crypto is 'easy money'</div>
+          <div class="mistakes">4. Forgetting your crypto keyphrase</div>
+          <div class="mistakes">5. Falling for scams</div>
+        </div>
+
+        </section>
+      <section class="column is-12 pl-5" id="dataPanel">
+        <div class="columns">
+          <div class="column pl-5 is-8 mb-0 p-0 mt-auto">
+            <p class="is-size-3 has-text-weight-bold watchList">Watch List</p>
+          </div>
+
+        </div>
+
+        <div class="column pl-5 is-8 mt-auto">
+          <table id="watchList">
+            <tr>
+              <th class="has-text-white">Name</th>
+              <th class="has-text-white">Market Cap</th>
+              <th class="has-text-white">Price</th>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="column pl-5 is-8 mt-auto redditContainer">
+          <h2 class="has-text-weight-bold redditHeading">Keep Up With r/CryptoCurrency</h2>
+          <div class="redditSection"></div>
+        </div>
+
+    </section>   
+    <script src="./assets/js/game.js"></script> 
+</body>
+</html>
