@@ -1,4 +1,33 @@
 //Brittney start
+<<<<<<< HEAD
+=======
+const startMoney = "$10,000";
+var money = " ";
+var buyBtn = document.getElementById("trade");
+var sellBtn = document.getElementById("sell");
+// Doug Start
+// var playerName = localStorage.getItem('pName');
+var playerMoney = localStorage.getItem('pMoney');
+
+
+function onLoad() {
+    var playerName = localStorage.getItem('pName');
+    var play = document.getElementById("player")
+    if (!playerName) {
+    play.textContent = "Crypto Watch"
+    
+} 
+else 
+{
+
+    console.log("playerName>>> " + playerName)
+    console.log("Play>>> " + play)
+    play.textContent = playerName + "'s Crypto Watch"
+}
+}
+onLoad()
+// Doug End
+>>>>>>> doug
 
 var addBtn = document.getElementById("#add");
 
@@ -38,10 +67,10 @@ const baseUrl = 'https:api.coincap.io';
             return response.json();
           })
           .then(function (data) {
-            console.log(data);
+            // console.log(data);
             for (i = 0; i < 20; i++) {
                 var cname = data.data[i].name;
-                console.log(cname);
+                // console.log(cname);
 
                 var list = document.getElementById('crypList');
                 var el = document.createElement('div');
@@ -135,3 +164,7 @@ const baseUrl2 = 'https://www.reddit.com/r/CryptoCurrency/top.json?limit=10';
       apiCall2();
 
       //Jessica end
+
+// Doug Start
+
+
