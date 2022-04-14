@@ -98,6 +98,7 @@ ul {
     color: rgba(248, 146, 9);
     text-shadow: 0 0 30px rgb(143, 48, 7);
     background-image: url(../images/reddit-background.jpeg);
+    
     height: 300px;
     background-size: cover;
     font-size: 4vw;
