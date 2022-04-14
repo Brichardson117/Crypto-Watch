@@ -62,6 +62,8 @@ function addToWatchList (event) {
     
     cryptoContainer.append(CryptoName, cryptoPrice, marketCap);
     watchListDiv.append(cryptoContainer)
+
+    localStorage.setItem(addToWatchList);
 }
 
 
