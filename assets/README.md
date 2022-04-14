@@ -4,7 +4,7 @@
 We created Crypto Watch! A new app where you can monitior your favorite Crypto currencies!\ 
 We created a list of the 20 most popular currencies that you can be added to your personal watch list.
 
-![dropdown-menu](assets/images/dropdow.png)
+![dropdown-menu](assets/images/dropdown.png)
 
 An API from CoinCap allows us to mainstream up-to-date information about cryptocurrency.\
 From the watch list  you can monitor key infromation in real time. 
