@@ -50,7 +50,7 @@ function addToWatchList (event) {
 localStorage.setItem("watch list", addToWatchList);
  
 
-const baseUrl = 'https:api.coincap.io';
+const baseUrl = 'https://api.coincap.io';
       const endpoint = '/v2/assets';
       const url = baseUrl + endpoint;
       function apiCall() {
